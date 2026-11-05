@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1, h3 {
+  text-align: center;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #138496;
+}
+
+.message {
+  height: 20px;
+  color: #d9534f;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.simulator-body {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.display-section {
+  flex: 1;
+}
+
+.data-container {
+  border: 2px dashed #bbb;
+  min-height: 250px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.block {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.block.peeked {
+  background-color: #ffc107;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.deleted-block {
+  background-color: #dc3545;
+}
